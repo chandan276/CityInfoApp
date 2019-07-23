@@ -5,3 +5,12 @@
   Created by Chandan Singh on 23/07/19.
   Copyright © 2019 Organization. All rights reserved.
 */
+
+// Common Strings
+"DEFAULT_SCREEN_TITLE" = "No Info";
+
+// City List Screen String Constants
+"CITY_LIST_SCREEN_TITLE" = "City List";
+
+// Add City Screen String Constants
+"ADD_CITY_SCREEN_TITLE" = "Add City";

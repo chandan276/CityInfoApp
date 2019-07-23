@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,7 +34,7 @@
 		39B82EB18064EEB82EDBF60BDEBC2D56 /* Pods-CityInfoAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CityInfoAppTests-dummy.m"; sourceTree = "<group>"; };
 		3F626249FC939B8AFDE446CA5FF68C98 /* Pods-CityInfoApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CityInfoApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3F8E045C2F3ADEFC42418505530F44E3 /* Pods-CityInfoApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CityInfoApp-umbrella.h"; sourceTree = "<group>"; };
-		4E8362EBC53F4D76FD931710FE652D3A /* Pods_CityInfoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CityInfoAppTests.framework; path = "Pods-CityInfoAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E8362EBC53F4D76FD931710FE652D3A /* Pods_CityInfoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CityInfoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A7EE6921DCD23E8ADD59ABE852579F /* Pods-CityInfoApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CityInfoApp-resources.sh"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		64A374D88F764EE971F5F2001B4A028E /* Pods-CityInfoApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CityInfoApp-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -42,11 +42,11 @@
 		6D69FEAB709B06883E0EDE639F1AED22 /* Pods-CityInfoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CityInfoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B4C809458BC98B93554C3414C58DA5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E0009CEBC62CFE57B44076CA0BF1AB1 /* Pods-CityInfoApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CityInfoApp.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B06AB782566AEA6A928FC702430BFA8 /* Pods-CityInfoAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CityInfoAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C578FBD3B2A06FC21B7ECACC749A6907 /* Pods-CityInfoApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CityInfoApp-dummy.m"; sourceTree = "<group>"; };
 		CD46E4CD1C73691F17AC167508F33360 /* Pods-CityInfoAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CityInfoAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		CDAD798907BBE797044F709E73F4C942 /* Pods_CityInfoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CityInfoApp.framework; path = "Pods-CityInfoApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDAD798907BBE797044F709E73F4C942 /* Pods_CityInfoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CityInfoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF59A65766E529565957B256A403418B /* Pods-CityInfoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CityInfoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		E6A88CB0175ABA0C58F87AD25F8CA50D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F30B12B0F33AC49F91D5870753935C37 /* Pods-CityInfoApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CityInfoApp-frameworks.sh"; sourceTree = "<group>"; };
@@ -222,10 +222,11 @@
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = DF15BA9E30F0181F9E651E790AF3335F /* Products */;
@@ -302,11 +303,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-CityInfoApp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CityInfoApp/Pods-CityInfoApp.modulemap";
 				OTHER_LDFLAGS = "";
@@ -341,11 +338,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-CityInfoApp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CityInfoApp/Pods-CityInfoApp.modulemap";
 				OTHER_LDFLAGS = "";
@@ -379,11 +372,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-CityInfoAppTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CityInfoAppTests/Pods-CityInfoAppTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -417,11 +406,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-CityInfoAppTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CityInfoAppTests/Pods-CityInfoAppTests.modulemap";
 				OTHER_LDFLAGS = "";

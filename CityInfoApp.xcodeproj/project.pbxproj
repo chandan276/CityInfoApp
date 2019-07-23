@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E0698CD9AE55D7A04BED28B /* Pods_CityInfoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC82CC1D3CF7D7051E505BE /* Pods_CityInfoAppTests.framework */; };
 		84858C9456338CFD5645F030 /* Pods_CityInfoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB623FF56F66FD8FADB2CC48 /* Pods_CityInfoApp.framework */; };
+		B54B075522E716C000CF737A /* CIBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B075422E716C000CF737A /* CIBaseViewController.swift */; };
 		B588590E22E70C1D001863C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B588590D22E70C1D001863C6 /* AppDelegate.swift */; };
 		B588591322E70C1D001863C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B588591122E70C1D001863C6 /* Main.storyboard */; };
 		B588591622E70C1D001863C6 /* CityInfoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B588591422E70C1D001863C6 /* CityInfoApp.xcdatamodeld */; };
@@ -38,6 +39,7 @@
 		41C0007E65DBA4AFBA357EA9 /* Pods-CityInfoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityInfoAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CityInfoAppTests/Pods-CityInfoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		AAC82CC1D3CF7D7051E505BE /* Pods_CityInfoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CityInfoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB623FF56F66FD8FADB2CC48 /* Pods_CityInfoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CityInfoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B54B075422E716C000CF737A /* CIBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIBaseViewController.swift; sourceTree = "<group>"; };
 		B588590A22E70C1D001863C6 /* CityInfoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityInfoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B588590D22E70C1D001863C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B588591222E70C1D001863C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		B588593022E70F72001863C6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B54B075422E716C000CF737A /* CIBaseViewController.swift */,
 				B588593122E70F72001863C6 /* AddCity */,
 				B588593522E70F72001863C6 /* CityList */,
 			);
@@ -374,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B54B075522E716C000CF737A /* CIBaseViewController.swift in Sources */,
 				B588590E22E70C1D001863C6 /* AppDelegate.swift in Sources */,
 				B588594622E71144001863C6 /* CICityListViewController.swift in Sources */,
 				B588593D22E70FFF001863C6 /* CIConstants.swift in Sources */,
