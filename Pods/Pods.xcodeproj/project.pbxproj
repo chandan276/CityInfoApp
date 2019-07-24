@@ -3,56 +3,85 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		62F5827FC92ABC884EDD228664C16143 /* Pods-CityInfoApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F8E045C2F3ADEFC42418505530F44E3 /* Pods-CityInfoApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3663164ACEC980AE3A041A5A92338739 /* Pods-CityInfoApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F8E045C2F3ADEFC42418505530F44E3 /* Pods-CityInfoApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E21E342A6E730574E77D1A71E29CE51 /* TTGSnackbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 653B922D7C937E734F8928BF5891B22F /* TTGSnackbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A39036E2D2EBE6C799DDC6032A9F7D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		A18F4749774201873B7AE763BC491CE4 /* Pods-CityInfoAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B82EB18064EEB82EDBF60BDEBC2D56 /* Pods-CityInfoAppTests-dummy.m */; };
 		A5A5ED87DEE37C8F7E54E7B538491EEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		B48CE4E44EA424EC69471901AAB9893D /* Pods-CityInfoApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C578FBD3B2A06FC21B7ECACC749A6907 /* Pods-CityInfoApp-dummy.m */; };
+		B903FAAADE121BF9826F222BF5E038AE /* TTGSnackbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60AE9115DD7952CFA21C023FFA6EB0A2 /* TTGSnackbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFB623590912E66F2026014292F2D1D7 /* Pods-CityInfoAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCC4C57E678420419F7E09E10F94998 /* Pods-CityInfoAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2DB140C077901A75297BE8169FCE36D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		C7897A630F2BC551515A49F0E6B8283B /* TTGSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24292ACDC01FC1C71A87BC89A670ABA3 /* TTGSnackbar.swift */; };
+		DA188A929D7F784F4AB2189E9F459B07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		E6A4F464BC73408C0B0084E4B7444329 /* TTGSnackbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CA2E7D24C2E36346C0EF59485D0162 /* TTGSnackbar-dummy.m */; };
+		F82AB31E7E9335E68D91886481C8292C /* Pods-CityInfoApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C578FBD3B2A06FC21B7ECACC749A6907 /* Pods-CityInfoApp-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0423FF451AC67F46C10B239E0ED88ABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DB121DF1F3510C388D6ABF1C81D2EC1;
+			remoteInfo = TTGSnackbar;
+		};
 		EF9670D206E01A9BF9C52890A1972217 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7D9069D90122FBBF0645E7F7AFEE13B7;
+			remoteGlobalIDString = 10CE2F063F8E4AD94DEC5A0C8F50FFFB;
 			remoteInfo = "Pods-CityInfoApp";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0247C8996493A7083603D5357AF47C95 /* Pods-CityInfoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CityInfoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		05D46867311371DD404241EFEB12A356 /* Pods_CityInfoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CityInfoAppTests.framework; path = "Pods-CityInfoAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBFC8BA6C0114C6FE4BEF56163228FD /* Pods-CityInfoAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CityInfoAppTests-frameworks.sh"; sourceTree = "<group>"; };
 		0DCC4C57E678420419F7E09E10F94998 /* Pods-CityInfoAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CityInfoAppTests-umbrella.h"; sourceTree = "<group>"; };
 		1358DC83A9368E375F8D35C46E1590D6 /* Pods-CityInfoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CityInfoApp.release.xcconfig"; sourceTree = "<group>"; };
+		24292ACDC01FC1C71A87BC89A670ABA3 /* TTGSnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TTGSnackbar.swift; path = TTGSnackbar/TTGSnackbar.swift; sourceTree = "<group>"; };
+		26CA2E7D24C2E36346C0EF59485D0162 /* TTGSnackbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTGSnackbar-dummy.m"; sourceTree = "<group>"; };
 		339B95A46B523CC3DFDDE15DBDC2AF4B /* Pods-CityInfoAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CityInfoAppTests-resources.sh"; sourceTree = "<group>"; };
+		395BCD018EA01F8F4EBB17A9DAC03CE2 /* TTGSnackbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTGSnackbar.xcconfig; sourceTree = "<group>"; };
 		39B82EB18064EEB82EDBF60BDEBC2D56 /* Pods-CityInfoAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CityInfoAppTests-dummy.m"; sourceTree = "<group>"; };
 		3F626249FC939B8AFDE446CA5FF68C98 /* Pods-CityInfoApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CityInfoApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3F8E045C2F3ADEFC42418505530F44E3 /* Pods-CityInfoApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CityInfoApp-umbrella.h"; sourceTree = "<group>"; };
-		4E8362EBC53F4D76FD931710FE652D3A /* Pods_CityInfoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CityInfoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A7EE6921DCD23E8ADD59ABE852579F /* Pods-CityInfoApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CityInfoApp-resources.sh"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		60AE9115DD7952CFA21C023FFA6EB0A2 /* TTGSnackbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGSnackbar-umbrella.h"; sourceTree = "<group>"; };
 		64A374D88F764EE971F5F2001B4A028E /* Pods-CityInfoApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CityInfoApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		653B922D7C937E734F8928BF5891B22F /* TTGSnackbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTGSnackbar.h; path = TTGSnackbar/TTGSnackbar.h; sourceTree = "<group>"; };
 		6A6E81580D64392979E9CFA20EC40875 /* Pods-CityInfoAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CityInfoAppTests.modulemap"; sourceTree = "<group>"; };
 		6D69FEAB709B06883E0EDE639F1AED22 /* Pods-CityInfoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CityInfoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76F48DD4DF128BB9E8F8CB7E4C3A7D82 /* Pods_CityInfoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CityInfoApp.framework; path = "Pods-CityInfoApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4C809458BC98B93554C3414C58DA5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E0009CEBC62CFE57B44076CA0BF1AB1 /* Pods-CityInfoApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CityInfoApp.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B06AB782566AEA6A928FC702430BFA8 /* Pods-CityInfoAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CityInfoAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9BA60B0F3D6BA555F2685AA31F497BF5 /* TTGSnackbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TTGSnackbar.framework; path = TTGSnackbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2233B30CA75E378D637F5568E80D4E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C578FBD3B2A06FC21B7ECACC749A6907 /* Pods-CityInfoApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CityInfoApp-dummy.m"; sourceTree = "<group>"; };
+		C6AF67EBBB6F0354EEFFFA69BA317BD1 /* TTGSnackbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGSnackbar-prefix.pch"; sourceTree = "<group>"; };
+		CC740C166F2C30D09FA871C2C9249194 /* TTGSnackbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TTGSnackbar.modulemap; sourceTree = "<group>"; };
 		CD46E4CD1C73691F17AC167508F33360 /* Pods-CityInfoAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CityInfoAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		CDAD798907BBE797044F709E73F4C942 /* Pods_CityInfoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CityInfoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF59A65766E529565957B256A403418B /* Pods-CityInfoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CityInfoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		E6A88CB0175ABA0C58F87AD25F8CA50D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F30B12B0F33AC49F91D5870753935C37 /* Pods-CityInfoApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CityInfoApp-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		359CC4B9DF30DBFEF654F720330050D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A39036E2D2EBE6C799DDC6032A9F7D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FE960FF5A053F530D1CE1EAED0FAD4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,17 +90,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAAC830EC2F69D8A952A22CF02FFBFB8 /* Frameworks */ = {
+		DDD9AA65CA1E31FC45375D0FB2FB16FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2DB140C077901A75297BE8169FCE36D /* Foundation.framework in Frameworks */,
+				DA188A929D7F784F4AB2189E9F459B07 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006484693283346198312C9AC6A56A19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B25A6177D4ABF198E9DAE94E24F9930D /* TTGSnackbar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5B642DC163385F0D4D71EC961F225B5C /* Pods-CityInfoAppTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,9 +140,21 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				DF15BA9E30F0181F9E651E790AF3335F /* Products */,
+				006484693283346198312C9AC6A56A19 /* Pods */,
+				DB9442A6B185DE0374EBD532F43DBCB4 /* Products */,
 				C7A238EF4BACF46199B29D2B63E34CEF /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		B25A6177D4ABF198E9DAE94E24F9930D /* TTGSnackbar */ = {
+			isa = PBXGroup;
+			children = (
+				653B922D7C937E734F8928BF5891B22F /* TTGSnackbar.h */,
+				24292ACDC01FC1C71A87BC89A670ABA3 /* TTGSnackbar.swift */,
+				DBA4B15EC7C7F4D0D085B5DEB5B38816 /* Support Files */,
+			);
+			name = TTGSnackbar;
+			path = TTGSnackbar;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -123,6 +172,30 @@
 				5B642DC163385F0D4D71EC961F225B5C /* Pods-CityInfoAppTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DB9442A6B185DE0374EBD532F43DBCB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76F48DD4DF128BB9E8F8CB7E4C3A7D82 /* Pods_CityInfoApp.framework */,
+				05D46867311371DD404241EFEB12A356 /* Pods_CityInfoAppTests.framework */,
+				9BA60B0F3D6BA555F2685AA31F497BF5 /* TTGSnackbar.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBA4B15EC7C7F4D0D085B5DEB5B38816 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2233B30CA75E378D637F5568E80D4E1 /* Info.plist */,
+				CC740C166F2C30D09FA871C2C9249194 /* TTGSnackbar.modulemap */,
+				395BCD018EA01F8F4EBB17A9DAC03CE2 /* TTGSnackbar.xcconfig */,
+				26CA2E7D24C2E36346C0EF59485D0162 /* TTGSnackbar-dummy.m */,
+				C6AF67EBBB6F0354EEFFFA69BA317BD1 /* TTGSnackbar-prefix.pch */,
+				60AE9115DD7952CFA21C023FFA6EB0A2 /* TTGSnackbar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TTGSnackbar";
 			sourceTree = "<group>";
 		};
 		DDAFD8677557FEC055E59DED41687452 /* Pods-CityInfoApp */ = {
@@ -143,18 +216,18 @@
 			path = "Target Support Files/Pods-CityInfoApp";
 			sourceTree = "<group>";
 		};
-		DF15BA9E30F0181F9E651E790AF3335F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CDAD798907BBE797044F709E73F4C942 /* Pods_CityInfoApp.framework */,
-				4E8362EBC53F4D76FD931710FE652D3A /* Pods_CityInfoAppTests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		5024D7678BC5C88A8996F125A242F58D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B903FAAADE121BF9826F222BF5E038AE /* TTGSnackbar-umbrella.h in Headers */,
+				4E21E342A6E730574E77D1A71E29CE51 /* TTGSnackbar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59544C38F7E93AC171A1B9D2EB329631 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,17 +236,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F805656BAF5C78A9C85C4ADA6418D22C /* Headers */ = {
+		D794520A3DA12CDD2C15AA7F0E484715 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62F5827FC92ABC884EDD228664C16143 /* Pods-CityInfoApp-umbrella.h in Headers */,
+				3663164ACEC980AE3A041A5A92338739 /* Pods-CityInfoApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		10CE2F063F8E4AD94DEC5A0C8F50FFFB /* Pods-CityInfoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DD736381D415614A2FFCDA7EA8C9412 /* Build configuration list for PBXNativeTarget "Pods-CityInfoApp" */;
+			buildPhases = (
+				D794520A3DA12CDD2C15AA7F0E484715 /* Headers */,
+				018CFD60FADFAEC04AF64D60A0B4539F /* Sources */,
+				DDD9AA65CA1E31FC45375D0FB2FB16FC /* Frameworks */,
+				3101ADB69235CE683835F7798BF4F540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF10490F3AC09B28B67E15C1A943D8BA /* PBXTargetDependency */,
+			);
+			name = "Pods-CityInfoApp";
+			productName = "Pods-CityInfoApp";
+			productReference = 76F48DD4DF128BB9E8F8CB7E4C3A7D82 /* Pods_CityInfoApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		72355A1817C06D96EF86458CDEC841AE /* Pods-CityInfoAppTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48C11D8095D65BB37EAC7ED8FFFB3246 /* Build configuration list for PBXNativeTarget "Pods-CityInfoAppTests" */;
@@ -190,25 +282,25 @@
 			);
 			name = "Pods-CityInfoAppTests";
 			productName = "Pods-CityInfoAppTests";
-			productReference = 4E8362EBC53F4D76FD931710FE652D3A /* Pods_CityInfoAppTests.framework */;
+			productReference = 05D46867311371DD404241EFEB12A356 /* Pods_CityInfoAppTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7D9069D90122FBBF0645E7F7AFEE13B7 /* Pods-CityInfoApp */ = {
+		9DB121DF1F3510C388D6ABF1C81D2EC1 /* TTGSnackbar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C711E88286F16B1DDC13E918B3B6BFFC /* Build configuration list for PBXNativeTarget "Pods-CityInfoApp" */;
+			buildConfigurationList = 699606EC5AEBA01F050CECF91491E1B1 /* Build configuration list for PBXNativeTarget "TTGSnackbar" */;
 			buildPhases = (
-				F805656BAF5C78A9C85C4ADA6418D22C /* Headers */,
-				7695D11511E50D409FB00133C0CE14BC /* Sources */,
-				EAAC830EC2F69D8A952A22CF02FFBFB8 /* Frameworks */,
-				ADF64D94A9AC5A98D60952F3CC6BF00E /* Resources */,
+				5024D7678BC5C88A8996F125A242F58D /* Headers */,
+				5260EB2268B434624FF52BAC07D3F085 /* Sources */,
+				359CC4B9DF30DBFEF654F720330050D5 /* Frameworks */,
+				EA949613DF7DD841899ADFF4AC2B274E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-CityInfoApp";
-			productName = "Pods-CityInfoApp";
-			productReference = CDAD798907BBE797044F709E73F4C942 /* Pods_CityInfoApp.framework */;
+			name = TTGSnackbar;
+			productName = TTGSnackbar;
+			productReference = 9BA60B0F3D6BA555F2685AA31F497BF5 /* TTGSnackbar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -222,24 +314,31 @@
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DF15BA9E30F0181F9E651E790AF3335F /* Products */;
+			productRefGroup = DB9442A6B185DE0374EBD532F43DBCB4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7D9069D90122FBBF0645E7F7AFEE13B7 /* Pods-CityInfoApp */,
+				10CE2F063F8E4AD94DEC5A0C8F50FFFB /* Pods-CityInfoApp */,
 				72355A1817C06D96EF86458CDEC841AE /* Pods-CityInfoAppTests */,
+				9DB121DF1F3510C388D6ABF1C81D2EC1 /* TTGSnackbar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3101ADB69235CE683835F7798BF4F540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75CCA92CB45841CEAD68CE500B591893 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,7 +346,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADF64D94A9AC5A98D60952F3CC6BF00E /* Resources */ = {
+		EA949613DF7DD841899ADFF4AC2B274E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,11 +356,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7695D11511E50D409FB00133C0CE14BC /* Sources */ = {
+		018CFD60FADFAEC04AF64D60A0B4539F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48CE4E44EA424EC69471901AAB9893D /* Pods-CityInfoApp-dummy.m in Sources */,
+				F82AB31E7E9335E68D91886481C8292C /* Pods-CityInfoApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5260EB2268B434624FF52BAC07D3F085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6A4F464BC73408C0B0084E4B7444329 /* TTGSnackbar-dummy.m in Sources */,
+				C7897A630F2BC551515A49F0E6B8283B /* TTGSnackbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,18 +387,22 @@
 		10E349943305522657DBA0FA67BEE59F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-CityInfoApp";
-			target = 7D9069D90122FBBF0645E7F7AFEE13B7 /* Pods-CityInfoApp */;
+			target = 10CE2F063F8E4AD94DEC5A0C8F50FFFB /* Pods-CityInfoApp */;
 			targetProxy = EF9670D206E01A9BF9C52890A1972217 /* PBXContainerItemProxy */;
+		};
+		AF10490F3AC09B28B67E15C1A943D8BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTGSnackbar;
+			target = 9DB121DF1F3510C388D6ABF1C81D2EC1 /* TTGSnackbar */;
+			targetProxy = 0423FF451AC67F46C10B239E0ED88ABE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05DF54ADEFA3E84C0FB418366E177B07 /* Release */ = {
+		05632DF9DA67EDBA07085C25342755F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1358DC83A9368E375F8D35C46E1590D6 /* Pods-CityInfoApp.release.xcconfig */;
+			baseConfigurationReference = 395BCD018EA01F8F4EBB17A9DAC03CE2 /* TTGSnackbar.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -300,54 +412,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CityInfoApp/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TTGSnackbar/TTGSnackbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTGSnackbar/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CityInfoApp/Pods-CityInfoApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TTGSnackbar/TTGSnackbar.modulemap";
+				PRODUCT_MODULE_NAME = TTGSnackbar;
+				PRODUCT_NAME = TTGSnackbar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		386FCD99302960670F8EA5C2BC90AA81 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0247C8996493A7083603D5357AF47C95 /* Pods-CityInfoApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CityInfoApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CityInfoApp/Pods-CityInfoApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -372,7 +453,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-CityInfoAppTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CityInfoAppTests/Pods-CityInfoAppTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -382,6 +467,46 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		72D99C1A1EA6F517232B4998BDBD6F83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0247C8996493A7083603D5357AF47C95 /* Pods-CityInfoApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CityInfoApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CityInfoApp/Pods-CityInfoApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -406,7 +531,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-CityInfoAppTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CityInfoAppTests/Pods-CityInfoAppTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -416,6 +545,47 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8131C50F84AC1257461329E93376963F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1358DC83A9368E375F8D35C46E1590D6 /* Pods-CityInfoApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CityInfoApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CityInfoApp/Pods-CityInfoApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -486,6 +656,44 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		CE0B4C8D1BFF201DAF3CF76A405B1394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 395BCD018EA01F8F4EBB17A9DAC03CE2 /* TTGSnackbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TTGSnackbar/TTGSnackbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTGSnackbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TTGSnackbar/TTGSnackbar.modulemap";
+				PRODUCT_MODULE_NAME = TTGSnackbar;
+				PRODUCT_NAME = TTGSnackbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		EA8C7AF90938697605468604B2A17B9F /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -558,6 +766,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2DD736381D415614A2FFCDA7EA8C9412 /* Build configuration list for PBXNativeTarget "Pods-CityInfoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72D99C1A1EA6F517232B4998BDBD6F83 /* Debug */,
+				8131C50F84AC1257461329E93376963F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		48C11D8095D65BB37EAC7ED8FFFB3246 /* Build configuration list for PBXNativeTarget "Pods-CityInfoAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -567,11 +784,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C711E88286F16B1DDC13E918B3B6BFFC /* Build configuration list for PBXNativeTarget "Pods-CityInfoApp" */ = {
+		699606EC5AEBA01F050CECF91491E1B1 /* Build configuration list for PBXNativeTarget "TTGSnackbar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				386FCD99302960670F8EA5C2BC90AA81 /* Debug */,
-				05DF54ADEFA3E84C0FB418366E177B07 /* Release */,
+				05632DF9DA67EDBA07085C25342755F3 /* Debug */,
+				CE0B4C8D1BFF201DAF3CF76A405B1394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

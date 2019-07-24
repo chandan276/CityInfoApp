@@ -12,6 +12,10 @@
 "ERROR_TEXT" = "Error";
 "VALIDATION_TEXT" = "All fields are mandatory. Please fill all the data.";
 
+"DELETE_TITLE" = "Delete";
+"UNDO_MESSAGE" = "Undo last delete";
+"UNDO_BUTTON_TEXT" = "Undo";
+
 // City List Screen String Constants
 "CITY_LIST_SCREEN_TITLE" = "City List";
 "DATA_UNAVAILABLE_STRING" = "No City Data Available";
@@ -19,5 +23,5 @@
 // Add City Screen String Constants
 "ADD_CITY_SCREEN_TITLE" = "Add City";
 "CITY_NAME_TEXTFIELD_PLACEHOLDER" = "Enter City Name";
-"POPULATION_TEXTFIELD_PLACEHOLDER" = "Enter Population";
+"POPULATION_TEXTFIELD_PLACEHOLDER" = "Enter City Population";
 "STATE_TEXTFIELD_PLACEHOLDER" = "Enter State";

@@ -14,6 +14,10 @@ struct Constants {
         
         struct Dimensions {
             static let minimumRowHeight: CGFloat = 90.0
+            static let defaultHeaderFooterHeight: CGFloat = 1.0
+            static let popoverWidth = 200
+            static let popoverHeight = 140
+            static let timerInterval: Double = 5.0
         }
     }
     

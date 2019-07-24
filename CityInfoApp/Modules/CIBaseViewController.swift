@@ -8,6 +8,15 @@
 
 import UIKit
 
+enum Direction: String {
+    case north, east, south, west
+    static var allValues = [Direction.north, .east, .south, .west]
+}
+
+struct DirectionModel {
+    var direction = SortOrder.creationDate
+}
+
 class CIBaseViewController: UIViewController {
     
     //Setup Screen title

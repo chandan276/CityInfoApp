@@ -64,7 +64,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rEk-Er-xch"/>
+                    <navigationItem key="navigationItem" id="rEk-Er-xch">
+                        <barButtonItem key="rightBarButtonItem" title="Sort" id="rnp-Hn-VxV">
+                            <connections>
+                                <action selector="sortingAction:" destination="BYZ-38-t0r" id="hzF-FX-Aj5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cityDataTableView" destination="OZ3-cl-Hiw" id="fc6-Eq-Kyf"/>
                         <outlet property="dataUnavailableLabel" destination="fjr-Re-d1Y" id="8h6-sY-9fh"/>
@@ -84,7 +90,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Q4W-3h-Y2i">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="cRm-pC-Dfb" id="VG4-gH-0yI"/>
                                     <outlet property="delegate" destination="cRm-pC-Dfb" id="lmQ-du-4mh"/>

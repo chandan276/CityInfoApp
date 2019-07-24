@@ -28,6 +28,8 @@
 		B588594222E71057001863C6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B588594422E71057001863C6 /* Localizable.strings */; };
 		B588594622E71144001863C6 /* CICityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B588594522E71144001863C6 /* CICityListViewController.swift */; };
 		B588594822E71165001863C6 /* CIAddCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B588594722E71165001863C6 /* CIAddCityViewController.swift */; };
+		B5B11C5922E8610500B3A464 /* ArrayChoiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B11C5722E8610500B3A464 /* ArrayChoiceTableViewController.swift */; };
+		B5B11C5A22E8610500B3A464 /* AlwaysShowPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B11C5822E8610500B3A464 /* AlwaysShowPopup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		B588594322E71057001863C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B588594522E71144001863C6 /* CICityListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CICityListViewController.swift; sourceTree = "<group>"; };
 		B588594722E71165001863C6 /* CIAddCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIAddCityViewController.swift; sourceTree = "<group>"; };
+		B5B11C5722E8610500B3A464 /* ArrayChoiceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayChoiceTableViewController.swift; sourceTree = "<group>"; };
+		B5B11C5822E8610500B3A464 /* AlwaysShowPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlwaysShowPopup.swift; sourceTree = "<group>"; };
 		F7B10612001FB54625B8901E /* Pods-CityInfoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityInfoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CityInfoApp/Pods-CityInfoApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +110,7 @@
 		B514567822E81FFB00073E42 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				B5B11C5622E8610500B3A464 /* Popover */,
 				B514567922E81FFB00073E42 /* CIFloatingButton.swift */,
 				B514567B22E8203300073E42 /* CIAlertPresenter.swift */,
 			);
@@ -254,6 +259,15 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		B5B11C5622E8610500B3A464 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				B5B11C5722E8610500B3A464 /* ArrayChoiceTableViewController.swift */,
+				B5B11C5822E8610500B3A464 /* AlwaysShowPopup.swift */,
+			);
+			path = Popover;
+			sourceTree = "<group>";
+		};
 		CD94873D2B8E01B436024E6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +288,7 @@
 				B588590622E70C1D001863C6 /* Sources */,
 				B588590722E70C1D001863C6 /* Frameworks */,
 				B588590822E70C1D001863C6 /* Resources */,
+				ACAC5C530BC35E91F70382E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -409,6 +424,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ACAC5C530BC35E91F70382E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CityInfoApp/Pods-CityInfoApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CityInfoApp/Pods-CityInfoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -418,6 +455,7 @@
 			files = (
 				B514567C22E8203300073E42 /* CIAlertPresenter.swift in Sources */,
 				B54B075522E716C000CF737A /* CIBaseViewController.swift in Sources */,
+				B5B11C5A22E8610500B3A464 /* AlwaysShowPopup.swift in Sources */,
 				B588590E22E70C1D001863C6 /* AppDelegate.swift in Sources */,
 				B588594622E71144001863C6 /* CICityListViewController.swift in Sources */,
 				B54B075722E71F0300CF737A /* CICountryListTableCell.swift in Sources */,
@@ -427,6 +465,7 @@
 				B514567522E81D9900073E42 /* CIAddCityTableCell.swift in Sources */,
 				B588594822E71165001863C6 /* CIAddCityViewController.swift in Sources */,
 				B588591622E70C1D001863C6 /* CityInfoApp.xcdatamodeld in Sources */,
+				B5B11C5922E8610500B3A464 /* ArrayChoiceTableViewController.swift in Sources */,
 				B588593F22E7100F001863C6 /* CIStringConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

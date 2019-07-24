@@ -6,6 +6,7 @@ target 'CityInfoApp' do
   use_frameworks!
 
   # Pods for CityInfoApp
+  pod "TTGSnackbar"
 
   target 'CityInfoAppTests' do
     inherit! :search_paths

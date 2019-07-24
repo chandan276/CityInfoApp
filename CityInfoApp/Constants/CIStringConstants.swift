@@ -14,6 +14,10 @@ let kAlertOkButtonText = NSLocalizedString("ALERT_OK_TEXT", comment: "")
 let kErrorText = NSLocalizedString("ERROR_TEXT", comment: "")
 let kValidationText = NSLocalizedString("VALIDATION_TEXT", comment: "")
 
+let kDeleteTitle = NSLocalizedString("DELETE_TITLE", comment: "")
+let kUndoMessage = NSLocalizedString("UNDO_MESSAGE", comment: "")
+let kUndoButtonText = NSLocalizedString("UNDO_BUTTON_TEXT", comment: "")
+
 // City List Screen String Constants
 let kCityListScreenTitle = NSLocalizedString("CITY_LIST_SCREEN_TITLE", comment: "")
 let kDataUnavailableString = NSLocalizedString("DATA_UNAVAILABLE_STRING", comment: "")
