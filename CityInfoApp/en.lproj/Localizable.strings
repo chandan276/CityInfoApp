@@ -8,9 +8,16 @@
 
 // Common Strings
 "DEFAULT_SCREEN_TITLE" = "No Info";
+"ALERT_OK_TEXT" = "Ok";
+"ERROR_TEXT" = "Error";
+"VALIDATION_TEXT" = "All fields are mandatory. Please fill all the data.";
 
 // City List Screen String Constants
 "CITY_LIST_SCREEN_TITLE" = "City List";
+"DATA_UNAVAILABLE_STRING" = "No City Data Available";
 
 // Add City Screen String Constants
 "ADD_CITY_SCREEN_TITLE" = "Add City";
+"CITY_NAME_TEXTFIELD_PLACEHOLDER" = "Enter City Name";
+"POPULATION_TEXTFIELD_PLACEHOLDER" = "Enter Population";
+"STATE_TEXTFIELD_PLACEHOLDER" = "Enter State";

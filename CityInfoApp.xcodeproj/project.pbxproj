@@ -9,7 +9,14 @@
 /* Begin PBXBuildFile section */
 		2E0698CD9AE55D7A04BED28B /* Pods_CityInfoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC82CC1D3CF7D7051E505BE /* Pods_CityInfoAppTests.framework */; };
 		84858C9456338CFD5645F030 /* Pods_CityInfoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB623FF56F66FD8FADB2CC48 /* Pods_CityInfoApp.framework */; };
+		B514567522E81D9900073E42 /* CIAddCityTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514567422E81D9900073E42 /* CIAddCityTableCell.swift */; };
+		B514567722E81DD000073E42 /* CIAddCityTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B514567622E81DD000073E42 /* CIAddCityTableCell.xib */; };
+		B514567A22E81FFB00073E42 /* CIFloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514567922E81FFB00073E42 /* CIFloatingButton.swift */; };
+		B514567C22E8203300073E42 /* CIAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514567B22E8203300073E42 /* CIAlertPresenter.swift */; };
+		B514567F22E83D0200073E42 /* UIViewController+Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514567E22E83D0200073E42 /* UIViewController+Features.swift */; };
 		B54B075522E716C000CF737A /* CIBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B075422E716C000CF737A /* CIBaseViewController.swift */; };
+		B54B075722E71F0300CF737A /* CICountryListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B075622E71F0300CF737A /* CICountryListTableCell.swift */; };
+		B54B075922E71F6200CF737A /* CICountryListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54B075822E71F6200CF737A /* CICountryListTableCell.xib */; };
 		B588590E22E70C1D001863C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B588590D22E70C1D001863C6 /* AppDelegate.swift */; };
 		B588591322E70C1D001863C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B588591122E70C1D001863C6 /* Main.storyboard */; };
 		B588591622E70C1D001863C6 /* CityInfoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B588591422E70C1D001863C6 /* CityInfoApp.xcdatamodeld */; };
@@ -39,7 +46,14 @@
 		41C0007E65DBA4AFBA357EA9 /* Pods-CityInfoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityInfoAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CityInfoAppTests/Pods-CityInfoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		AAC82CC1D3CF7D7051E505BE /* Pods_CityInfoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CityInfoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB623FF56F66FD8FADB2CC48 /* Pods_CityInfoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CityInfoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B514567422E81D9900073E42 /* CIAddCityTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIAddCityTableCell.swift; sourceTree = "<group>"; };
+		B514567622E81DD000073E42 /* CIAddCityTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CIAddCityTableCell.xib; sourceTree = "<group>"; };
+		B514567922E81FFB00073E42 /* CIFloatingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIFloatingButton.swift; sourceTree = "<group>"; };
+		B514567B22E8203300073E42 /* CIAlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIAlertPresenter.swift; sourceTree = "<group>"; };
+		B514567E22E83D0200073E42 /* UIViewController+Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Features.swift"; sourceTree = "<group>"; };
 		B54B075422E716C000CF737A /* CIBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIBaseViewController.swift; sourceTree = "<group>"; };
+		B54B075622E71F0300CF737A /* CICountryListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CICountryListTableCell.swift; sourceTree = "<group>"; };
+		B54B075822E71F6200CF737A /* CICountryListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CICountryListTableCell.xib; sourceTree = "<group>"; };
 		B588590A22E70C1D001863C6 /* CityInfoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityInfoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B588590D22E70C1D001863C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B588591222E70C1D001863C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +103,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B514567822E81FFB00073E42 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B514567922E81FFB00073E42 /* CIFloatingButton.swift */,
+				B514567B22E8203300073E42 /* CIAlertPresenter.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B514567D22E83CD800073E42 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B514567E22E83D0200073E42 /* UIViewController+Features.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B588590122E70C1D001863C6 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +145,8 @@
 			children = (
 				B588590D22E70C1D001863C6 /* AppDelegate.swift */,
 				B588593022E70F72001863C6 /* Modules */,
+				B514567822E81FFB00073E42 /* Utility */,
+				B514567D22E83CD800073E42 /* Extensions */,
 				B588593A22E70F72001863C6 /* Constants */,
 				B588591122E70C1D001863C6 /* Main.storyboard */,
 				B588591722E70C1F001863C6 /* Assets.xcassets */,
@@ -138,8 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				B54B075422E716C000CF737A /* CIBaseViewController.swift */,
-				B588593122E70F72001863C6 /* AddCity */,
 				B588593522E70F72001863C6 /* CityList */,
+				B588593122E70F72001863C6 /* AddCity */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -147,9 +180,9 @@
 		B588593122E70F72001863C6 /* AddCity */ = {
 			isa = PBXGroup;
 			children = (
-				B588593222E70F72001863C6 /* ViewModel */,
 				B588593322E70F72001863C6 /* Model */,
 				B588593422E70F72001863C6 /* View */,
+				B588593222E70F72001863C6 /* ViewModel */,
 				B588594722E71165001863C6 /* CIAddCityViewController.swift */,
 			);
 			path = AddCity;
@@ -172,6 +205,8 @@
 		B588593422E70F72001863C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B514567422E81D9900073E42 /* CIAddCityTableCell.swift */,
+				B514567622E81DD000073E42 /* CIAddCityTableCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,9 +214,9 @@
 		B588593522E70F72001863C6 /* CityList */ = {
 			isa = PBXGroup;
 			children = (
-				B588593622E70F72001863C6 /* ViewModel */,
 				B588593722E70F72001863C6 /* Model */,
 				B588593822E70F72001863C6 /* View */,
+				B588593622E70F72001863C6 /* ViewModel */,
 				B588594522E71144001863C6 /* CICityListViewController.swift */,
 			);
 			path = CityList;
@@ -204,6 +239,8 @@
 		B588593822E70F72001863C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B54B075622E71F0300CF737A /* CICountryListTableCell.swift */,
+				B54B075822E71F6200CF737A /* CICountryListTableCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,6 +350,8 @@
 				B588594222E71057001863C6 /* Localizable.strings in Resources */,
 				B588591822E70C1F001863C6 /* Assets.xcassets in Resources */,
 				B588591322E70C1D001863C6 /* Main.storyboard in Resources */,
+				B54B075922E71F6200CF737A /* CICountryListTableCell.xib in Resources */,
+				B514567722E81DD000073E42 /* CIAddCityTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,10 +416,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B514567C22E8203300073E42 /* CIAlertPresenter.swift in Sources */,
 				B54B075522E716C000CF737A /* CIBaseViewController.swift in Sources */,
 				B588590E22E70C1D001863C6 /* AppDelegate.swift in Sources */,
 				B588594622E71144001863C6 /* CICityListViewController.swift in Sources */,
+				B54B075722E71F0300CF737A /* CICountryListTableCell.swift in Sources */,
+				B514567F22E83D0200073E42 /* UIViewController+Features.swift in Sources */,
 				B588593D22E70FFF001863C6 /* CIConstants.swift in Sources */,
+				B514567A22E81FFB00073E42 /* CIFloatingButton.swift in Sources */,
+				B514567522E81D9900073E42 /* CIAddCityTableCell.swift in Sources */,
 				B588594822E71165001863C6 /* CIAddCityViewController.swift in Sources */,
 				B588591622E70C1D001863C6 /* CityInfoApp.xcdatamodeld in Sources */,
 				B588593F22E7100F001863C6 /* CIStringConstants.swift in Sources */,

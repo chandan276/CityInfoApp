@@ -17,10 +17,58 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjr-Re-d1Y">
+                                <rect key="frame" x="16" y="323.5" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="OZ3-cl-Hiw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Zoq-ir-ZBF"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="FyM-bT-Mlj"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XO7-E5-wnV" customClass="FloatingButton" customModule="CityInfoApp" customModuleProvider="target">
+                                <rect key="frame" x="309" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5YK-bS-eF0"/>
+                                    <constraint firstAttribute="width" constant="50" id="oGo-bz-dUK"/>
+                                </constraints>
+                                <state key="normal" image="FloatingButton"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shapeShadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="cRm-pC-Dfb" kind="show" id="jHl-F5-Ngg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OZ3-cl-Hiw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1dq-vs-xy8"/>
+                            <constraint firstItem="fjr-Re-d1Y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5qd-35-s9Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XO7-E5-wnV" secondAttribute="bottom" constant="20" id="5v1-3z-Woh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fjr-Re-d1Y" secondAttribute="trailing" constant="16" id="HtT-mK-57O"/>
+                            <constraint firstItem="OZ3-cl-Hiw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SX2-NQ-GHv"/>
+                            <constraint firstItem="fjr-Re-d1Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VmR-3S-rVQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XO7-E5-wnV" secondAttribute="trailing" constant="16" id="aUD-sA-OJ3"/>
+                            <constraint firstItem="OZ3-cl-Hiw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kUy-Yr-Z9t"/>
+                            <constraint firstItem="OZ3-cl-Hiw" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mLd-ks-Rdq"/>
+                            <constraint firstItem="fjr-Re-d1Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sx2-kY-utn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="rEk-Er-xch"/>
+                    <connections>
+                        <outlet property="cityDataTableView" destination="OZ3-cl-Hiw" id="fc6-Eq-Kyf"/>
+                        <outlet property="dataUnavailableLabel" destination="fjr-Re-d1Y" id="8h6-sY-9fh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -33,13 +81,39 @@
                     <view key="view" contentMode="scaleToFill" id="Exo-8c-pKo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Q4W-3h-Y2i">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cRm-pC-Dfb" id="VG4-gH-0yI"/>
+                                    <outlet property="delegate" destination="cRm-pC-Dfb" id="lmQ-du-4mh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Q4W-3h-Y2i" firstAttribute="top" secondItem="ehJ-Hx-uGp" secondAttribute="top" id="3CY-OF-Bll"/>
+                            <constraint firstItem="Q4W-3h-Y2i" firstAttribute="bottom" secondItem="ehJ-Hx-uGp" secondAttribute="bottom" id="5IT-P2-hub"/>
+                            <constraint firstItem="Q4W-3h-Y2i" firstAttribute="leading" secondItem="ehJ-Hx-uGp" secondAttribute="leading" id="JeH-Hp-gmw"/>
+                            <constraint firstItem="Q4W-3h-Y2i" firstAttribute="trailing" secondItem="ehJ-Hx-uGp" secondAttribute="trailing" id="dDc-Vg-2pP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ehJ-Hx-uGp"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lEB-Qm-TC5">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="kth-rH-wbz">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="cRm-pC-Dfb" id="64r-pS-xem"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addCityTableView" destination="Q4W-3h-Y2i" id="c2q-dj-bYr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AmX-mr-Nm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778" y="27"/>
+            <point key="canvasLocation" x="1776.8" y="26.53673163418291"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XUn-AO-wpc">
@@ -60,4 +134,7 @@
             <point key="canvasLocation" x="238" y="27"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FloatingButton" width="50" height="50"/>
+    </resources>
 </document>
