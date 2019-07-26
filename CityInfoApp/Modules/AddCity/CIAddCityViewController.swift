@@ -17,6 +17,7 @@ enum AddCityCellType: Int, CaseIterable {
 class CIAddCityViewController: CIBaseViewController {
     
     @IBOutlet weak var addCityTableView: UITableView!
+    fileprivate var viewModel = CIAddCityViewModel()
     
     fileprivate let cellId = Constants.CellIdentifiers.addCityScreenTableCellId
     
@@ -52,6 +53,7 @@ class CIAddCityViewController: CIBaseViewController {
             return false
         }
         
+        viewModel.addCityData(cityName: cityNameText, stateName: stateText, cityPopulation: populationText)
         return true
     }
     
@@ -83,8 +85,6 @@ extension CIAddCityViewController: UITableViewDataSource, UITableViewDelegate {
         }
         
         cell.setupTextFields(forRow: indexPath.row)
-        //Pass on the viewModel to cell and it will be taken care there.
-        
         return cell
     }
 }

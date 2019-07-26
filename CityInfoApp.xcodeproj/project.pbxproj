@@ -17,6 +17,11 @@
 		B54B075522E716C000CF737A /* CIBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B075422E716C000CF737A /* CIBaseViewController.swift */; };
 		B54B075722E71F0300CF737A /* CICountryListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B075622E71F0300CF737A /* CICountryListTableCell.swift */; };
 		B54B075922E71F6200CF737A /* CICountryListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54B075822E71F6200CF737A /* CICountryListTableCell.xib */; };
+		B563B7D322EAB12D00537C76 /* DBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563B7D222EAB12D00537C76 /* DBHandler.swift */; };
+		B563B7D522EABA8900537C76 /* CICityDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563B7D422EABA8900537C76 /* CICityDetailsModel.swift */; };
+		B563B7D722EABBB500537C76 /* CIAddCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563B7D622EABBB500537C76 /* CIAddCityViewModel.swift */; };
+		B563B7D922EABE0000537C76 /* CICityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563B7D822EABE0000537C76 /* CICityListViewModel.swift */; };
+		B563B7DB22EAC1BD00537C76 /* CICityDetailsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563B7DA22EAC1BD00537C76 /* CICityDetailsCellViewModel.swift */; };
 		B588590E22E70C1D001863C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B588590D22E70C1D001863C6 /* AppDelegate.swift */; };
 		B588591322E70C1D001863C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B588591122E70C1D001863C6 /* Main.storyboard */; };
 		B588591622E70C1D001863C6 /* CityInfoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B588591422E70C1D001863C6 /* CityInfoApp.xcdatamodeld */; };
@@ -56,6 +61,11 @@
 		B54B075422E716C000CF737A /* CIBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIBaseViewController.swift; sourceTree = "<group>"; };
 		B54B075622E71F0300CF737A /* CICountryListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CICountryListTableCell.swift; sourceTree = "<group>"; };
 		B54B075822E71F6200CF737A /* CICountryListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CICountryListTableCell.xib; sourceTree = "<group>"; };
+		B563B7D222EAB12D00537C76 /* DBHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHandler.swift; sourceTree = "<group>"; };
+		B563B7D422EABA8900537C76 /* CICityDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CICityDetailsModel.swift; sourceTree = "<group>"; };
+		B563B7D622EABBB500537C76 /* CIAddCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIAddCityViewModel.swift; sourceTree = "<group>"; };
+		B563B7D822EABE0000537C76 /* CICityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CICityListViewModel.swift; sourceTree = "<group>"; };
+		B563B7DA22EAC1BD00537C76 /* CICityDetailsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CICityDetailsCellViewModel.swift; sourceTree = "<group>"; };
 		B588590A22E70C1D001863C6 /* CityInfoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityInfoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B588590D22E70C1D001863C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B588591222E70C1D001863C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -125,6 +135,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B563B7D122EAB0F300537C76 /* DBHandler */ = {
+			isa = PBXGroup;
+			children = (
+				B563B7D222EAB12D00537C76 /* DBHandler.swift */,
+			);
+			path = DBHandler;
+			sourceTree = "<group>";
+		};
 		B588590122E70C1D001863C6 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +168,7 @@
 			children = (
 				B588590D22E70C1D001863C6 /* AppDelegate.swift */,
 				B588593022E70F72001863C6 /* Modules */,
+				B563B7D122EAB0F300537C76 /* DBHandler */,
 				B514567822E81FFB00073E42 /* Utility */,
 				B514567D22E83CD800073E42 /* Extensions */,
 				B588593A22E70F72001863C6 /* Constants */,
@@ -196,6 +215,7 @@
 		B588593222E70F72001863C6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B563B7D622EABBB500537C76 /* CIAddCityViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -230,6 +250,8 @@
 		B588593622E70F72001863C6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B563B7D822EABE0000537C76 /* CICityListViewModel.swift */,
+				B563B7DA22EAC1BD00537C76 /* CICityDetailsCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -237,6 +259,7 @@
 		B588593722E70F72001863C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B563B7D422EABA8900537C76 /* CICityDetailsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -454,19 +477,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B514567C22E8203300073E42 /* CIAlertPresenter.swift in Sources */,
+				B563B7D522EABA8900537C76 /* CICityDetailsModel.swift in Sources */,
 				B54B075522E716C000CF737A /* CIBaseViewController.swift in Sources */,
 				B5B11C5A22E8610500B3A464 /* AlwaysShowPopup.swift in Sources */,
 				B588590E22E70C1D001863C6 /* AppDelegate.swift in Sources */,
 				B588594622E71144001863C6 /* CICityListViewController.swift in Sources */,
 				B54B075722E71F0300CF737A /* CICountryListTableCell.swift in Sources */,
+				B563B7D922EABE0000537C76 /* CICityListViewModel.swift in Sources */,
+				B563B7D322EAB12D00537C76 /* DBHandler.swift in Sources */,
 				B514567F22E83D0200073E42 /* UIViewController+Features.swift in Sources */,
 				B588593D22E70FFF001863C6 /* CIConstants.swift in Sources */,
 				B514567A22E81FFB00073E42 /* CIFloatingButton.swift in Sources */,
 				B514567522E81D9900073E42 /* CIAddCityTableCell.swift in Sources */,
 				B588594822E71165001863C6 /* CIAddCityViewController.swift in Sources */,
+				B563B7D722EABBB500537C76 /* CIAddCityViewModel.swift in Sources */,
 				B588591622E70C1D001863C6 /* CityInfoApp.xcdatamodeld in Sources */,
 				B5B11C5922E8610500B3A464 /* ArrayChoiceTableViewController.swift in Sources */,
 				B588593F22E7100F001863C6 /* CIStringConstants.swift in Sources */,
+				B563B7DB22EAC1BD00537C76 /* CICityDetailsCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

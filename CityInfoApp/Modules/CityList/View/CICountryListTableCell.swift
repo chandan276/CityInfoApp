@@ -16,6 +16,15 @@ class CICountryListTableCell: UITableViewCell {
     
     var minHeight: CGFloat?
     
+    //MARK: View Model
+    public var viewModel: CICityDetailsCellViewModel? {
+        didSet {
+            self.cityNameLabel.text = "City Name: \(viewModel?.cityName ?? "NA")"
+            self.cityPopulationLabel.text = "City Population: \(viewModel?.population ?? "NA")"
+            self.cityStateLabel.text = "State: \(viewModel?.state ?? "NA")"
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

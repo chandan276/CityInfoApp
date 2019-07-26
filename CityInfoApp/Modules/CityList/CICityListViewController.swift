@@ -9,50 +9,59 @@
 import UIKit
 import TTGSnackbar
 
-enum SortOrder: String {
-    case name, population, creationDate
-    static var allValues = [SortOrder.name, .population, .creationDate]
-}
-
 class CICityListViewController: CIBaseViewController {
 
     @IBOutlet weak var dataUnavailableLabel: UILabel!
     @IBOutlet weak var cityDataTableView: UITableView!
     
+    fileprivate var viewModel = CICityListViewModel()
     fileprivate let cellId = Constants.CellIdentifiers.cityListScreenTableCellId
     
-    private var model = DirectionModel() {
+    private var model = SortingModel() {
         didSet {
             self.view.setNeedsLayout()
         }
     }
     
+    //MARK:- Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         self.screenTitle = kCityListScreenTitle
-        setupUI()
-    }
-
-    //MARK:- Configure UI
-    func setupUI() {
-        //Show No Data Label when there is not data to show
-        self.dataUnavailableLabel.text = kDataUnavailableString
-        self.dataUnavailableLabel.isHidden = true
-        
-        setupTableData()
+        cityDataTableView.register(UINib(nibName: cellId, bundle: nil), forCellReuseIdentifier: cellId)
     }
     
-    func setupTableData() {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        viewModel.fetchCityDetails(sortedBy: .creationDate) { (cityViewModel) in
+            self.setupUI()
+        }
+    }
+
+    //MARK:- UI Update Methods
+    private func setupUI() {
+        
+        if viewModel.rowsCount > 0 {
+            setupTableData()
+        } else {
+            //Show No Data Label when there is not data to show
+            self.dataUnavailableLabel.text = kDataUnavailableString
+            self.dataUnavailableLabel.isHidden = false
+            self.cityDataTableView.isHidden = true
+        }
+    }
+    
+    private func setupTableData() {
+        self.dataUnavailableLabel.isHidden = true
         self.cityDataTableView.isHidden = false
-        cityDataTableView.register(UINib(nibName: cellId, bundle: nil), forCellReuseIdentifier: cellId)
         
         cityDataTableView.estimatedRowHeight = Constants.App.Dimensions.minimumRowHeight
         cityDataTableView.rowHeight = UITableView.automaticDimension
+        cityDataTableView.reloadData()
     }
     
-    func showSnackBar() {
+    private func showSnackBar() {
         let snackbar = TTGSnackbar(message: kUndoMessage, duration: .long, actionText: kUndoButtonText, actionBlock: { (snackbar) in
             
         })
@@ -65,8 +74,11 @@ class CICityListViewController: CIBaseViewController {
     
     //MARK:- Sorting Action
     @IBAction func sortingAction(_ sender: UIBarButtonItem) {
-        let controller = ArrayChoiceTableViewController(SortOrder.allValues) { (direction) in
-            self.model.direction = direction
+        let controller = ArrayChoiceTableViewController(SortOrder.allValues) { [weak self] (sortType) in
+            if let self = self {
+                self.model.sorting = sortType
+                self.handleSorting(sortType)
+            }
         }
         
         controller.preferredContentSize = CGSize(width: Constants.App.Dimensions.popoverWidth, height: Constants.App.Dimensions.popoverHeight)
@@ -79,6 +91,12 @@ class CICityListViewController: CIBaseViewController {
         presentationController.permittedArrowDirections = [.down, .up]
         self.present(controller, animated: true)
     }
+    
+    private func handleSorting(_ sortOrder: SortOrder) {
+        viewModel.fetchCityDetails(sortedBy: sortOrder) { (cityViewModel) in
+            self.setupUI()
+        }
+    }
 }
 
 extension CICityListViewController: UITableViewDataSource, UITableViewDelegate {
@@ -88,7 +106,7 @@ extension CICityListViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.rowsCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -100,6 +118,7 @@ extension CICityListViewController: UITableViewDataSource, UITableViewDelegate {
         cell.minHeight = Constants.App.Dimensions.minimumRowHeight
         
         //Pass on the viewModel to cell and it will be taken care there.
+        cell.viewModel = self.viewModel.cityDetailsCellViewModel(index: indexPath.row)
         
         return cell
     }
@@ -122,12 +141,18 @@ extension CICityListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
 
-        let delete = UITableViewRowAction(style: .destructive, title: kDeleteTitle) { (action, indexPath) in
-            // delete item at indexPath
-            //self.tableArray.remove(at: indexPath.row)
-//            tableView.deleteRows(at: [indexPath], with: .fade)
-//            print(self.tableArray)
-            self.showSnackBar()
+        let delete = UITableViewRowAction(style: .destructive, title: kDeleteTitle) { [weak self] (action, indexPath) in
+            if let self = self {
+                let cell = tableView.cellForRow(at: indexPath) as? CICountryListTableCell
+                self.viewModel.deleteCityDetails(cityName: (cell?.cityNameLabel.text)!, completion: { (result) in
+                    if result {
+                        self.viewModel.fetchCityDetails(sortedBy: .creationDate) { (cityViewModel) in
+                            self.setupUI()
+                        }
+                        self.showSnackBar()
+                    }
+                })
+            }
         }
 
         return [delete]

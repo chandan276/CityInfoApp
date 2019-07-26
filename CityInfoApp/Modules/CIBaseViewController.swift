@@ -8,13 +8,13 @@
 
 import UIKit
 
-enum Direction: String {
-    case north, east, south, west
-    static var allValues = [Direction.north, .east, .south, .west]
+enum SortOrder: String {
+    case name, population, creationDate
+    static var allValues = [SortOrder.name, .population, .creationDate]
 }
 
-struct DirectionModel {
-    var direction = SortOrder.creationDate
+struct SortingModel {
+    var sorting = SortOrder.creationDate
 }
 
 class CIBaseViewController: UIViewController {
