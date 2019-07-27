@@ -65,4 +65,14 @@ extension CICityListViewModel {
             }
         }
     }
+    
+    func undoDeleteOperation(completion: @escaping (Bool) -> ()) {
+        DBHandler.sharedInstance.undoLastDeleteOperation { (result) in
+            if result {
+                completion(true)
+            } else {
+                completion(false)
+            }
+        }
+    }
 }

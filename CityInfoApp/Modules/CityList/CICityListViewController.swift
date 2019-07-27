@@ -10,7 +10,7 @@ import UIKit
 import TTGSnackbar
 
 class CICityListViewController: CIBaseViewController {
-
+    
     @IBOutlet weak var dataUnavailableLabel: UILabel!
     @IBOutlet weak var cityDataTableView: UITableView!
     
@@ -34,11 +34,9 @@ class CICityListViewController: CIBaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        viewModel.fetchCityDetails(sortedBy: .creationDate) { (cityViewModel) in
-            self.setupUI()
-        }
+        doFetchOperation()
     }
-
+    
     //MARK:- UI Update Methods
     private func setupUI() {
         
@@ -52,6 +50,12 @@ class CICityListViewController: CIBaseViewController {
         }
     }
     
+    private func doFetchOperation() {
+        viewModel.fetchCityDetails(sortedBy: .creationDate) { (cityViewModel) in
+            self.setupUI()
+        }
+    }
+    
     private func setupTableData() {
         self.dataUnavailableLabel.isHidden = true
         self.cityDataTableView.isHidden = false
@@ -62,8 +66,14 @@ class CICityListViewController: CIBaseViewController {
     }
     
     private func showSnackBar() {
-        let snackbar = TTGSnackbar(message: kUndoMessage, duration: .long, actionText: kUndoButtonText, actionBlock: { (snackbar) in
-            
+        let snackbar = TTGSnackbar(message: kUndoMessage, duration: .long, actionText: kUndoButtonText, actionBlock: { [weak self] (snackbar) in
+            if let self = self {
+                self.viewModel.undoDeleteOperation(completion: { (result) in
+                    if result {
+                        self.doFetchOperation()
+                    }
+                })
+            }
         })
         snackbar.show()
     }
@@ -140,21 +150,19 @@ extension CICityListViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-
+        
         let delete = UITableViewRowAction(style: .destructive, title: kDeleteTitle) { [weak self] (action, indexPath) in
             if let self = self {
                 let cell = tableView.cellForRow(at: indexPath) as? CICountryListTableCell
-                self.viewModel.deleteCityDetails(cityName: (cell?.cityNameLabel.text)!, completion: { (result) in
-                    if result {
-                        self.viewModel.fetchCityDetails(sortedBy: .creationDate) { (cityViewModel) in
-                            self.setupUI()
-                        }
+                self.viewModel.deleteCityDetails(cityName: (cell?.viewModel?.cityName)!, completion: { [weak self] (result) in
+                    if let self = self, result {
+                        self.doFetchOperation()
                         self.showSnackBar()
                     }
                 })
             }
         }
-
+        
         return [delete]
     }
 }
