@@ -48,6 +48,7 @@ class DBHandler {
     func save(cityName city: String, stateName state: String, cityPopulation population: String) {
         
         let managedContext = self.persistentContainer.viewContext
+        managedContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
         
         let entity = NSEntityDescription.entity(forEntityName: "CityDetails", in: managedContext)!
         let cityTableData = NSManagedObject(entity: entity, insertInto: managedContext)
@@ -85,7 +86,7 @@ class DBHandler {
             break
         }
         
-        let sort = NSSortDescriptor(key: sortString, ascending: true)
+        let sort = NSSortDescriptor(key: sortString, ascending: false)
         fetchRequest.sortDescriptors = [sort]
         
         do {
